@@ -1,21 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Caveat', cursive;
+    background-color: #ecbeb4;
+    /* text-align: center; */
 }
 header{
     display: flex;
     align-items: center;
-    background-color: blue;
-    color: white;
+    background-color: #b69cbf;
+    color: black;
     border: 2px black solid;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 header img{
     margin: 1rem;
+    height: 8cm;
+    width: 8cm;
     /* 160 by 160 */
+}
+
+header img:hover {
+    transform: scaleX(-1);
 }
 
 header h1{
     text-align: center;
+    /* text-shadow: #FC0 1px 0 10px; */
+    
+
 }
 
 header div:nth-child(2){
@@ -25,4 +39,17 @@ header div:nth-child(2){
 #content{
     margin: 0 auto;
     width: 800px;
+}
+
+main h2{
+    text-align: center;
+}
+
+footer{
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    background-color: #b69cbf;
+    color: black;
+    border: 2px black solid;
 }
