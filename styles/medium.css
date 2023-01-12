@@ -1,0 +1,7 @@
+@media screen and (min-width: 640px){
+    header, footer{
+        background-color:  #AE8CA3;
+        border:  2px black solid;
+        border-radius:  1rem;
+    }
+} 

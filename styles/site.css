@@ -5,12 +5,14 @@ body{
     background-color: #ecbeb4;
     /* text-align: center; */
 }
+
 header{
     display: flex;
     align-items: center;
     background-color: #b69cbf;
     color: black;
     border: 2px black solid;
+    border-radius: 1rem;
     text-shadow: #FC0 1px 0 10px;
 }
 
@@ -52,4 +54,5 @@ footer{
     background-color: #b69cbf;
     color: black;
     border: 2px black solid;
+    border-radius: 1rem;
 }
