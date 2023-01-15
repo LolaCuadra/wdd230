@@ -1,0 +1,85 @@
+body{
+    font-family: 'caveat', cursive;
+    /* display: grid;
+    grid-template-columns: ; */
+    background-color: #ecbeb4;
+}
+
+#content{
+    margin: 0 auto;
+    width: 375px;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    background-color: #b69cbf;
+    color: black;
+    border: 1px black solid;
+    border-radius: 1rem;
+}
+
+header h1 h2{
+    text-align: center;
+}
+
+
+.principle{
+    align-items: center;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    /* border: 1px black solid; */
+    /* border-top: 1px black solid; */
+    border-radius: 1rem;
+}
+
+.capturas img{
+    /* margin: 1rem; */
+    height: 40cm;
+    width: 8cm;
+}
+
+.capturas{
+    align-items: center;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    border: 1px black solid;
+    /* border-radius: 1rem; */
+}
+
+
+footer{
+    align-items: center;
+    text-align: center;
+    background-color: #b69cbf;
+    color: black;
+    border: 1px black solid;
+    border-radius: 1rem;
+}
+
+
+
+/* body{
+    display: grid;
+    /* ways to split the grid */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 20% 30% 50%; */
+
+    /* tablet view */
+    /* grid-template-areas: "s1 s2"
+                         "s3 s3";  */
+
+/* } */
+
+/* #section1{
+    grid-area: s1;
+}
+
+#section2{
+    grid-area: s2;
+}
+#section3{
+    grid-area: s3;
+} */
