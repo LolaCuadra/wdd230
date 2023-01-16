@@ -1,13 +1,13 @@
 body{
     font-family: 'caveat', cursive;
     /* display: grid;
-    grid-template-columns: ; */
+    grid-template-columns: 1fr ; */
     background-color: #ecbeb4;
 }
 
 #content{
-    margin: 0 auto;
-    width: 375px;
+    display: grid;
+    grid-template-columns: 1fr ;
 }
 
 header{
