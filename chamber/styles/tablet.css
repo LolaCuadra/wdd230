@@ -1,0 +1,12 @@
+@media screen and (min-width: 600px){
+    main{
+        font-style: italic;
+        display: grid;
+        grid-template-areas: "hero"
+                            "news"
+                            "spotlights spotligths"
+                            "join"
+                            "event event weather";
+        grid-gap: 1em;
+    }
+}

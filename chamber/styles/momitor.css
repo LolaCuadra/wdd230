@@ -1,0 +1,16 @@
+@media screen and (min-width: 800px){
+    main {
+        font-style: italic;
+        display: grid;
+        grid-template-areas: "event hero hero spotlights"
+                            "weather hero hero spotlights"
+                            "join news news spotlights";
+        grid-gap: 1em;
+    }
+
+    .spotlight3{
+        border: 2px gray solid;
+        background-color: lightgray;
+        padding: 1em;
+    }
+}

@@ -99,6 +99,33 @@ img{
   height: 20%;
 }
 
+/* hamburger menu stuff */
+#navbar{
+  display: none;
+}
+
+#menu-open{
+  display: none;
+}
+
+#menu-close{
+  display: inline;
+}
+
+#navbar.menu-active{
+  display: flex;
+}
+
+#menu-open.menu-active{
+  display: inline;
+}
+
+#menu-close.menu-active{
+  display: none;
+}
+
+/* middle widths */
+
 @media screen and (min-width: 640px) {
     nav ul {
       flex-direction: row;
