@@ -1,12 +1,19 @@
-@media screen and (min-width: 600px){
+@media screen and (max-width: 850px){
+
     main{
         font-style: italic;
         display: grid;
-        grid-template-areas: "hero"
-                            "news"
-                            "spotlights spotligths"
-                            "join"
-                            "event event weather";
+        grid-template-areas: "hero hero" 
+                            "news news" 
+                            "spotlights spotlights" 
+                            "join join"
+                            "event weather";
         grid-gap: 1em;
+        
     }
+
+    .spotlight3{
+        display: none;
+    }
+
 }
