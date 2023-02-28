@@ -1,5 +1,6 @@
 body{
     background-color: #ecbeb4; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     grid-template-areas: "s0"
                         "s1"
