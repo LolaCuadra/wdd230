@@ -1,0 +1,28 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+caption{
+    padding: 1rem;
+    caption-side: bottom;
+}
+
+td, th{
+    border: 1px solid black; 
+    padding: 1rem;
+    text-align: center;
+}
+
+th{
+    background-color: #b69cbf;
+    color: black;
+}
+
+.header{
+    background-color: #ecbeb4;
+}
