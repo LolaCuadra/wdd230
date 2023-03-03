@@ -1,0 +1,25 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    
+    
+}
+
+.card{
+    background-color: aliceblue;
+    display: grid;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1em;
+    margin: 1em;
+}
