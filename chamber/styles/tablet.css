@@ -11,9 +11,28 @@
         grid-gap: 1em;
         
     }
+    header {
+        grid-template-columns: 150px auto auto auto;
+    }
 
     .spotlight3{
         display: none;
     }
 
+    .icon {
+        display: block;
+        justify-self: end;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+
+    }
+
+    .date {
+        grid-column: 1/5;
+    }
 }

@@ -1,12 +1,12 @@
-body {
+main {
     display: center;
-    background-color: beige;
+    background-color: white;
 }
 picture img{            
     display: block;
-    width: 300px;
-    height: 400px;
-    margin: 15px;
+    width: 50px;
+    height: 300px;
+    margin: 400px;
     box-shadow: 5px 5px 5px 5px lightgrey;
     filter: blur(0.0em);
     transition: filter .5s;

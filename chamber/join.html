@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site planning document for WDD 230 Chamber of Commerce Index- Dolores Cuadra">
+    <title>Guamilito - Chamber Of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/monitor.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+</head>
+<body>
+  <header>
+    <img class="logo" src="./images/Guamilito-logos_black.png" alt="logo">
+    <div class="titulos">
+      <h1>Guamilito</h1>
+      <h2>Chamber Of Commerce</h2>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/feed/"><img src="./images/icons8-linkedin-circled-48.png" alt="linkedin"></a>
+      <a href="https://www.facebook.com/?ref=logo"><img src="./images/icons8-facebook-circled-48.png" alt="facebook"></a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav class="topnav">
+      <a href="#whatever">Whatever</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+    <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+  </div>
+    <div class="date">
+      <p><span id="fecha"></span></p>
+    </div>
+ </header>
+
+ <main>
+    <form method="GET" action="thank_you.html">
+        <label for="first">First Name*</label> 
+        <input type="text" name="first" id="first" required>
+        <br>
+        <br>
+
+        <label for="last">Last Name*</label> 
+        <input type="text" name="last" id="last" required>
+        <br>
+        <br>
+
+        <label for="title">Title</label> 
+        <input type="text" name="title" id="title" pattern="[A-Za-z -]{7,}">
+        <br>
+        <br>
+
+        <label for="email">Email*</label> 
+        <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" required>
+        <br>
+        <br>
+
+        <label for="phone">Cell Phone*</label> 
+        <input type="tel" name="phone" id="phone" required>
+        <br>
+        <br>
+
+        <label for="business">Business Name*</label> 
+        <input type="text" name="business" id="business" required>
+        <br>              
+
+        <fieldset class="options">
+            <label for="membership">Membership Level*</label> 
+            <br>
+
+            <input type="radio" id="Non-Profit" name="membership" value="Non-Profit">
+            <label for="Non-Profit">Non-Profit</label>
+            <br>
+
+            <input type="radio" id="Bronze" name="membership" value="Bronze">
+            <label for="Bronze">Bronze</label>
+            <br>
+
+            <input type="radio" id="Silver" name="membership" value="Silver">
+            <label for="Silver">Silver</label>
+            <br>
+
+            <input type="radio" id="Gold" name="membership" value="Gold">
+            <label for="Gold">Gold</label>
+            <br>
+            <br>
+        </fieldset>
+
+        <label for="business_description">Description of Business</label>
+        <textarea name="business_description" id="business_description" cols="20" rows="10"></textarea>
+        <br>
+
+        <input type="hidden" name="date" id="current_date" value="">
+        <input type="submit" value="Join Here!" class="join-button">
+    </form>
+
+    <div class="member_info">
+        <h2>Membership Levels Benefits</h2>
+        <h3>NP Membership</h3>
+        <ul>
+            <li>For non profit organizations and there is no fee</li>
+        </ul>
+
+        <h3>Bronze Membership</h3>
+        <ul>
+            <li>15% discount on events</li>
+            <li>10% discount on advertising</li>
+            <li>Fee of $50/month</li>
+        </ul>
+
+        <h3>Silver Membership</h3>
+        <ul>
+            <li>25% discount on events</li>
+            <li>15% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>Fee of $100/month</li>
+        </ul>
+
+        <h3>Gold Membership</h3>
+        <ul>
+            <li>50% discount on events</li>
+            <li>50% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>5 free featured ads per year</li>
+            <li>1 free training per quarter</li>
+            <li>Fee of $250/month</li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <div>
+    <img src="./images/Guamilito-logos_black.png" alt="Guamilito-logos_black">
+    </div>
+    <div class="direccion ">
+    <h1>Guamilito</h1>
+    <h2>Chamber of Commerce</h2> 
+    <p>4ta Ave. Entre 7 y Calle Edificio #58, San Pedro Sula, Honduras</p>
+    </div>
+    <div class="contacto">
+    <p>guamilito@chamber.org</p>
+    <p>+(504) 111-2223 </p>
+    <p>📍 Location Map</p>
+    </div>
+    <div class="pie">
+        <p>&copy; <span id="currentyear"></span> Guamilito Chamber | Dolores Cuadra | WDD 230 Project | Last Modification: <span id="lastmodified"></span></p>
+    </div>
+</footer>
+</body>
+</html>

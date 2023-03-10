@@ -12,42 +12,44 @@
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
 </head>
 <body>
-    <header>
-    <div>
-      <img src="/chamber/images/Guamilito-logos_black.png" alt="Guamilito-logos_black">
+  <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+  </div>
+  <header>
+
+    <img class="logo" src="./images/Guamilito-logos_black.png" alt="logo">
+   
+    <div class="titulos">
       <h1>Guamilito</h1>
       <h2>Chamber Of Commerce</h2>
-      </div>
-      <div>
+    </div>
+    <div class="social">
       <a href="https://www.linkedin.com/feed/"><img src="./images/icons8-linkedin-circled-48.png" alt="linkedin"></a>
       <a href="https://www.facebook.com/?ref=logo"><img src="./images/icons8-facebook-circled-48.png" alt="facebook"></a>
-     </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav class="topnav">
+      <a href="#whatever">Whatever</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
 
-      <!-- idk how to the hamburger bar :c )-->
-      <div class="topnav">
-        <!-- <a href="#home" class="active">Logo</a> -->
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      
-      <div class="date">
-        <p><span id="fecha"></span></p>
-      </div>
-    </header>
+    <div class="date">
+      <p><span id="fecha"></span></p>
+    </div>
+  </header>
 
     <main class="content"> 
         <div class="hero">
             <div>
                 <h3>welcome to Guamilito!</h3>
-                <img class="hero-image" src="./images/FOTO-SAN-PEDRO-SULA.jpg" alt="hero image">
+                <img class="hero-image" src="./images/FOTO-SAN-PEDRO.jpg" alt="hero image">
                 <button class="joinbutton">Join The Chamber</button>
             </div>
         </div>
@@ -58,10 +60,11 @@
             <p>Join us for the grand opening of Reposteria "los Hermanos", Thursday at 1:00 p.m</p>
         </div>
 
-        <div class="weather">
+        <div id="weather">
             <h4>Weather</h4>
-            <img src="./images/pngwing.com(7).png" alt="weather">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Current Temperature: <span id="temp"></span></p>
+            <p>Current Wind Speed: <span id="wind"></span></p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
         </div>
 
         <div class="news">
@@ -72,21 +75,23 @@
         <div class="spotlights">
             <div class="spotlight1">
                 <h4>Trasporte de moto Taxi</h4>
-                <img src="./images/pngwing.com(5).png" alt="moto Taxi">
+                <img src="" alt="">
                 <p>"The Best Three Wheeled service in town"</p>
                 <p>mototaxis@gmail.com</p>
                 <p>+504 123 4567</p>
             </div>
             <div class="spotlight2">
                 <h4>Guarderia Guamilito</h4>
-                <img src="./images/pngwing.com(6).png" alt="Guarderia">
-                <p>Para los papis ocupados con trabajos Guarderia Guamilito cuida a sus ninos de 7 am a 7 pm</p>
+                <img src="" alt="">
+                <p> Aqui cuidamos tus nenes</p>
                 <p>Guarderiaguam@gmail.com</p>
                 <p>+504 321 8769</p>
             </div>
             <div class="spotlight3">
-                <b>Spotlight 3</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h4>Tortillas a domicilio</h4>
+                <img src="" alt="">
+                <p>Pregunte por nuestro precios por media,una y dos docenas!</p>
+                <p>+504 766 8921</p>
             </div>
         </div>
         <div class="join">
@@ -112,15 +117,14 @@
             <p>&copy; <span id="currentyear"></span> Guamilito Chamber | Dolores Cuadra | WDD 230 Project | Last Modification: <span id="lastmodified"></span></p>
        </div>
     </footer>
-    <script> //burger menu
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
+    <script>
+      const banner = document.getElementById("banner");
+      const today = new Date();
+      const dayOfWeek = today.getDay();
+      
+      if (dayOfWeek === 1 || dayOfWeek === 2) {
+          banner.style.display = "block";
+      }
     </script>
 </body>
 </html>

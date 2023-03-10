@@ -1,3 +1,4 @@
+/* @media screen and (min-width: 1050px){ */
 #fecha{
     background-color: #0E9EBF;
     border: 1px solid white;
@@ -7,9 +8,17 @@
     font-size: 18px;
 }
 
+#banner{
+    display: none; 
+    border: 1px solid white;
+    background-color: #0E9EBF;
+    padding: 0.5rem; 
+    text-align: center;
+    font-size: 18px;
+}
+
 h2{
     font-family: 'Playfair Display', serif;
-    /* float: left; */
 }
 
 h1{
@@ -32,7 +41,7 @@ h4{
     text-shadow: #FC0 1px 0 10px;
 }
 
-header, footer{
+footer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,17 +50,46 @@ header, footer{
     color: white;
 }
 
-header{
-    margin-bottom: 1em;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: auto;
-}
-
 .date{
     grid-column-start: 1;
     grid-column-end: 4;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto auto;
+    grid-template-rows: repeat(3, auto);
+    background-color: #00B6DD;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.titulos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.social {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+}
+.icon{
+    display: none;
+}
+.topnav{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.date{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+#banner{
+    grid-column: 1/8
 }
 
 header a img{
@@ -124,7 +162,7 @@ footer img{
     display: block;
     grid-area: hero;
     border: 2px gray solid;
-    background-color: lightgray;
+    background-color: #0E9EBF;
     padding: 1em;
 }
 
@@ -153,12 +191,12 @@ footer img{
     display: block;
     grid-area: event;
     border: 2px gray solid;
-    background-color: lightgray;
+    background-color: #0E9EBF;
     padding: 1em;
     margin-left: 1em;
 }
 
-.weather{
+#weather{
     display: block;
     grid-area: weather;
     border: 2px gray solid;
@@ -191,8 +229,8 @@ footer img{
 
 .spotlight1{
     display: block;
-    border: 2px gray solid;
-    background-color: lightgray;
+    border: 2px white solid;
+    background-color: #0E9EBF;
     padding: 1em;
 }
 .spotlight1 img{
@@ -203,21 +241,27 @@ footer img{
 
 .spotlight2{
     display: block;
-    border: 2px gray solid;
+    border: 2px white solid;
     background-color: #0E9EBF;
     padding: 1em;
 }
 
-.spotlight2{
+.spotlight2 img{
     width: 150px;
     height: 150px;
     display: center;
 }
 
 .spotlight3{
-    border: 2px gray solid;
+    border: 2px white solid;
     background-color: #0E9EBF;
     padding: 1em;
+}
+
+.spotlight3 img{
+    width: 150px;
+    height: 150px;
+    display: center;
 }
 
 .join{
@@ -288,4 +332,4 @@ main {
                         "join news news spotlights";
     grid-gap: 1em;
 }
-
+/* } */
