@@ -36,9 +36,10 @@ h3{
 }
 
 h4{
+    font-size: 30px;
     display: center;
-    color: yellow;
-    text-shadow: #FC0 1px 0 10px;
+    color: white;
+    text-shadow: white 1px 0 10px;
 }
 
 footer{
@@ -199,6 +200,7 @@ footer img{
 #weather{
     display: block;
     grid-area: weather;
+    text-align: center;
     border: 2px gray solid;
     background-color: #0E9EBF;
     padding: 1em;
