@@ -207,11 +207,6 @@ footer img{
     margin-left: 1em;
 }
 
-.weather img{
-    width: 150px;
-    height: 150px;
-}
-
 .news{
     display: block;
     grid-area: news;
