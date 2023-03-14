@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,20 @@
     <meta name="description" content="Site planning document for WDD 230 Chamber of Commerce Index- Dolores Cuadra">
     <title>Guamilito - Chamber Of Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- <link rel="stylesheet" href="./styles/monitor.css"> -->
-    <!-- <link rel="stylesheet" href="./styles/tablet.css">
-    <link rel="stylesheet" href="./styles/mobile.css"> -->
+    <link rel="stylesheet" href="./styles/monitor.css">
     <link rel="stylesheet" href="./styles/discover.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/scripts.js" defer></script>
-
+    <script src="./scripts/discover.js" defer></script>
 </head>
 <body>
+  <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+  </div>
   <header>
+
     <img class="logo" src="./images/Guamilito-logos_black.png" alt="logo">
+   
     <div class="titulos">
       <h1>Guamilito</h1>
       <h2>Chamber Of Commerce</h2>
@@ -30,35 +33,45 @@
       <i class="fa fa-bars"></i>
     </a>
     <nav class="topnav">
-      <a href="#whatever">Whatever</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./discover.html">Discover</a>
+      <a href="#contact">Join</a>
       <a href="#about">About</a>
     </nav>
-    <div id="banner">
-      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-    </div>
+
     <div class="date">
       <p><span id="fecha"></span></p>
     </div>
   </header>
-
 <main>
-    <h2>Welcome back! It has been <span id="days-since-visit">0</span> days since your last visit.</h2>
-    <picture>
-        <img src="./images/discover/placeholder.jpeg" data-src="/images/discover/images.jpeg" alt="Centro San Pedro">
-    </picture>
-    <picture>
-        <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/IMG_8848.jpg" alt="Parque Infantil">
-    </picture>
-    <picture>
-        <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/plaza-tipica.webp" alt="plaza-tipica">
-    </picture>
-    <picture>
-        <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/Pollo-Campero2.png" alt="pillo-campero">
-    </picture>
-    <picture>
-        <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/BeFunky-collage-2022-10-14T095114.425.jpg" alt="Mercado-Guamilito">
+  <h1>Welcome back!<br>It has been <span id="days-since-visit">0</span> days since your last visit.</h1>
+  <hr>
+  <h2>Plaza Tipica</h2>
+  <picture>
+      <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/plaza-tipica.webp" alt="plaza-tipica">
+  </picture>
+  <p>Venga a disfrutar de las distinas comidas tipicas de Honduras! Estamos localizados a media cuadra del centro.</p>
+  <hr>
+  <h2>Pollo Campero</h2>
+  <picture>
+  <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/Pollo-Campero2.png" alt="Pollo-Campero"> 
+  </picture>
+  <p>Porque no hay mejor forma de comer pollo frito, que comiendo pollo campero.</p>
+  <hr>
+  <h2>Parque Infantil de San Pedro Sula</h2>
+  <picture>
+  <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/IMG_8848.jpg" alt="Parque">
+  </picture>
+  <h2>Centro San Pedro Sula</h2>
+  <picture>
+    <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/images.jpeg" alt="Harry Styles">
+    <p>El centro de San Pedro Sula es un lugar espectacularpara pasar un tiempo en familia, disfrutar de un rico mango, o un helado!</p>
+    <hr>
+  </picture>
+  <picture>
+    <h2>Mercado Guamilito</h2>
+      <img src="./images/discover/placeholder.jpeg" data-src="./images/discover/BeFunky-collage-2022-10-14T095114.425.jpg" alt="Mercado">
+    <p>El mercado mas viejo en la historia de Honduras ha sido recontruido luego de haberse quemado ya hace unos anos. Muchos microempresarios empezaron aqui!</p>
     </picture>
 </main>
 <footer>
