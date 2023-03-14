@@ -35,4 +35,12 @@
     .date {
         grid-column: 1/5;
     }
+
+    .main-hero{
+        grid-area: hero;
+        position: relative;      
+        height: 600px; 
+        background-image: url('../images/centrosanpedro.jpg');    
+    }
+
 }

@@ -1,4 +1,10 @@
 /* @media screen and (min-width: 1050px){ */
+.semana6{
+    margin: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
 #fecha{
     background-color: #0E9EBF;
     border: 1px solid white;
@@ -39,7 +45,7 @@ h4{
     font-size: 30px;
     display: center;
     color: white;
-    text-shadow: white 1px 0 10px;
+    text-shadow: black 1px 0 10px;
 }
 
 footer{
@@ -159,34 +165,29 @@ footer img{
     text-align: center;
 }
 
-.hero{
-    display: block;
-    grid-area: hero;
-    border: 2px gray solid;
+main-hero section {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 0.5rem;
     background-color: #0E9EBF;
-    padding: 1em;
+}
+/* https://github.com/LolaCuadra/wdd230/blob/main/chamber/images/FOTO-SAN-PEDRO-SULA.jpg */
+.main-hero{
+    grid-area: hero;
+    position: relative;      
+    background-image: url('../images/centrosanpedro.jpg');    
+    background-position: center;
+    height: auto;        
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+main-hero img{
+    width: 50px;
+    height: 50px;
+}
 
-  .hero button{
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-    bottom: 40%;
-    right: 60%;
-    transform: translate(0% , -60%);
-  }
+section{
+    display: block;
+}
 
 .event{
     display: block;
@@ -195,6 +196,12 @@ footer img{
     background-color: #0E9EBF;
     padding: 1em;
     margin-left: 1em;
+}
+
+.event img{
+    width: 150px;
+    height: 150px;
+    display: center;
 }
 
 #weather{
@@ -216,6 +223,7 @@ footer img{
 }
 
 .spotlights{
+    align-items: center;
     display: block;
     grid-area: spotlights;
     padding: 1em;

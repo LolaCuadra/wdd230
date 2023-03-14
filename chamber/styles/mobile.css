@@ -15,6 +15,15 @@
     .join {
         display:none;
     }
+
+    .main-hero{
+        grid-area: hero;
+        position: relative;      
+        background-image: url('../images/centrosanpedro.jpg');    
+        background-position: center;
+        text-align: center;
+        height: 400px;         
+    }
   } 
   
  
