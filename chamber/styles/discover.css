@@ -1,9 +1,220 @@
-main {
+#fecha{
+    background-color: #0E9EBF;
+    border: 1px solid white;
     display: block;
-    background-color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 18px;
 }
+
+#banner{
+    display: none; 
+    border: 1px solid white;
+    background-color: #0E9EBF;
+    padding: 0.5rem; 
+    text-align: center;
+    font-size: 18px;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+}
+
+h3{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+h4{
+    font-size: 30px;
+    display: center;
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00B6DD;
+    padding: 1em;
+    color: white;
+}
+
+.date{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto auto;
+    grid-template-rows: repeat(3, auto);
+    background-color: #00B6DD;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.titulos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.social {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+}
+.icon{
+    display: none;
+}
+.topnav{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.date{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+#banner{
+    grid-column: 1/8
+}
+
+header a img{
+    height: 1cm;
+}
+
+header img{
+    float: left;
+    height: 150px;
+    padding: 5px;
+}
+
+nav {
+    margin: auto;
+    padding: 1rem;
+}
+
+nav ul li:hover{
+    background-color: rgb(56,56,56);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;  
+}
+  
+nav ul li {
+    min-width: 20%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1.5px solid gray;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  
+
+footer {
+    margin-top: 1em;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-rows: 45 45 10; */
+    grid-template-rows: 1fr auto ;
+    align-content: center;
+}
+
+.contacto{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+footer img{
+    height: 250px;
+    float: left;
+    padding: 5px;
+}
+
+.pie{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+main-hero section {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #0E9EBF;
+}
+/* https://github.com/LolaCuadra/wdd230/blob/main/chamber/images/FOTO-SAN-PEDRO-SULA.jpg */
+.main-hero{
+    grid-area: hero;
+    position: relative;      
+    background-image: url('../images/15.jpg');    
+    background-position: center;
+    height: auto;      
+    width: 570px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #00B6DD;
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a.icon {
+    float: right;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: #00B6DD;
+}
+
+footer p{
+    text-shadow: black 1px 0 10px;
+}
+
+main-hero img{
+    width: 50px;
+    height: 50px;
+}
+
 picture img{            
     display: block;
+    text-align: center;
     box-shadow: 5px 5px 5px 5px #0E9EBF;
     filter: blur(0.0em);
     transition: filter .5s;
@@ -16,4 +227,31 @@ picture img[data-src]{
     filter: blur(0.5em);
     width: 300px;
     height: 400px;
+
+}
+
+picture img:hover{
+    transform: scaleX(-1);
+}
+
+
+.cards{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    width: 500px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 400px;
+}
+
+.cards picture{
+    align-items: center;
+}
+
+.cards p{
+    padding: 10px;
+    font-weight: 500;
+    background-color: #0E9EBF;
+    color: white;
 }

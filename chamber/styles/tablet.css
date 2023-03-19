@@ -39,8 +39,10 @@
     .main-hero{
         grid-area: hero;
         position: relative;      
-        height: 600px; 
-        background-image: url('../images/15.jpg');    
+        height: 700px; 
+        width: 800px;
+        background-image: url('../images/209ea9cb6c7737e7f0975203a97968f2.jpg'); 
+        margin-left: 1em;   
     }
 
 }

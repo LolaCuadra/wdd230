@@ -1,9 +1,4 @@
 /* @media screen and (min-width: 1050px){ */
-.semana6{
-    margin: 1rem;
-    width: 50%;
-    text-align: center;
-}
 
 #fecha{
     background-color: #0E9EBF;
@@ -29,16 +24,6 @@ h2{
 
 h1{
     font-family: 'Caveat', cursive;
-}
-
-h3{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: black 1px 0 10px;
 }
 
 h4{
@@ -172,17 +157,52 @@ main-hero section {
     background-color: #0E9EBF;
 }
 /* https://github.com/LolaCuadra/wdd230/blob/main/chamber/images/FOTO-SAN-PEDRO-SULA.jpg */
-.main-hero{
+/* .main-hero{
     grid-area: hero;
     position: relative;      
     background-image: url('../images/15.jpg');    
     background-position: center;
-    height: auto;        
+    height: auto;      
+    width: 570px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.main-hero{
+    display: grid;
+    grid-area: hero;
+    background-image: url("../images/Catedral_San_Pedro_Apóstol_2021.jpg");
+    border: 2px gray solid;  
+    background-position: center;
+    background-repeat:no-repeat;
+    text-align: center;
+    width: 660px; 
+    align-items: center;
+    justify-content: center;
+    background-size: auto 100%;
 }
 
-main-hero img{
-    width: 50px;
-    height: 50px;
+.hero_button {
+    padding: .5em;
+    background-color: #3e8e41;
+    /* border: 2px black solid; */
+    width: fit-content;
+    border-style: none;
+    margin-left: 40%;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.hero_button:hover{
+    background-color: #04aa6d;
+}
+
+.hero_button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 section{
@@ -196,6 +216,8 @@ section{
     background-color: #0E9EBF;
     padding: 1em;
     margin-left: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .event img{
@@ -207,11 +229,12 @@ section{
 #weather{
     display: block;
     grid-area: weather;
-    text-align: center;
     border: 2px gray solid;
     background-color: #0E9EBF;
     padding: 1em;
     margin-left: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .news{
@@ -220,6 +243,8 @@ section{
     border: 2px gray solid;
     background-color: #0E9EBF;
     padding: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .spotlights{
@@ -237,6 +262,8 @@ section{
     border: 2px white solid;
     background-color: #0E9EBF;
     padding: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 .spotlight1 img{
     width: 150px;
@@ -249,6 +276,8 @@ section{
     border: 2px white solid;
     background-color: #0E9EBF;
     padding: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .spotlight2 img{
@@ -261,6 +290,8 @@ section{
     border: 2px white solid;
     background-color: #0E9EBF;
     padding: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .spotlight3 img{
@@ -276,6 +307,8 @@ section{
     background-color: #0E9EBF;
     padding: 1em;
     margin-left: 1em;
+    min-height: 150px;
+    text-align: center;
 }
 
 .joinbutton{
@@ -304,28 +337,87 @@ section{
     overflow: hidden;
     background-color: #00B6DD;
     position: relative;
-  }
+}
   
-  .topnav #myLinks {
+.topnav #myLinks {
     display: none;
-  }
+}
   
-  .topnav a {
+.topnav a {
     float: left;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
-  .topnav a.icon {
+.topnav a.icon {
     float: right;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: #00B6DD;
+}
+
+footer p{
+    text-shadow: black 1px 0 10px;
+}
+
+directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 1.3em;
   }
+  
+  .directory-cards section{
+    display: grid;
+    text-align: center;    
+    border: 2px solid #560216;    
+    width: 280px;
+    background-color: #560216;
+    padding: 1em;
+    margin: 1em;
+    color: white;
+    justify-content: center;
+  }
+  
+  .directory-cards .gold-member{
+    box-shadow: 1rem 1rem #CF920E;
+  }
+  
+  /*list*/
+  .directory-list{    
+    display: grid;
+    justify-items: center;   
+    padding: 1rem;  
+  }
+  
+  .directory-list section img{
+    display: none;
+  }
+  
+  .directory-list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .directory-list a{
+    color: black;
+  }
+  
+  .directory-list section:nth-child(odd) {
+    background-color: #E89F00;
+  }
+  
+  .directory-list section:nth-child(even) {
+    background-color: #CF920E;
+  }
+  
   
 /* sizing */
 main {
@@ -337,4 +429,3 @@ main {
                         "join news news spotlights";
     grid-gap: 1em;
 }
-/* } */

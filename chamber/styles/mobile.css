@@ -22,7 +22,9 @@
         background-image: url('../images/15.jpg');    
         background-position: center;
         text-align: center;
-        height: 400px;         
+        height: 400px;
+        width: 600px; 
+        margin-left: 1em;
     }
   } 
   

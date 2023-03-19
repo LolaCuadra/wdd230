@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/monitor.css">
     <link rel="stylesheet" href="./styles/tablet.css">
     <link rel="stylesheet" href="./styles/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
 </head>
@@ -34,10 +33,11 @@
       <i class="fa fa-bars"></i>
     </a>
     <nav class="topnav">
-      <a href="./index.html">Home</a>
-      <a href="./discover.html">Discover</a>
-      <a href="#contact">Join</a>
-      <a href="#about">About</a>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
+        <a href="./contact.html">Contact</a>
     </nav>
 
     <div class="date">
@@ -48,13 +48,7 @@
     <main class="content"> 
         <section class="main-hero">
             <h4>welcome to Guamilito!</h4>
-            <!-- <picture class="semana6">
-                <source media="(max-width: 400px)" srcset="./images/semana6/small.webp">
-                <source media="(max-width: 700px)" srcset="./images/semana6/medium.webp">
-                <img src="./images/semana6/large.webp" alt="people in a meeting">
-                </picture> -->
-            <!-- <img class="hero-image" src="./images/centrosanpedro.jpg" alt="hero image"> -->
-            <button class="joinbutton">Join The Chamber</button>
+            <a href="./join.html"><button class="hero_button">Join The Chamber</button></a>
         </section>
         <div class="event">
             <h4>Ribbon Cutting</h4>
@@ -68,15 +62,14 @@
                 <img src="./" alt="weather" id="weather-icon" />
                 <figcaption><span id="temperature"></span> &deg;F</figcaption>
             </figure>
+            <p>Temperature: <span id="temperature"></span> &deg;F</p>
             <hr>
             <p>Wind Speed: <span id="windspeed"></span> mph</p>
             <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
         </div>
-
         <div class="news">
             <b>News Release</b>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <p>We are trying to help all the people on the Guamilito Community start their bussiness, please contact us if you have any inquiries or what to learn more before joining. <a href="./contact.html">Contact Us</a></p>
         </div>
         <div class="spotlights">
             <div class="spotlight1">
@@ -101,8 +94,8 @@
             </div>
         </div>
         <div class="join">
-            <button class="joinbutton">Join Now!</button>
             <p>Discover how to join the chamber of commercew and how it will benefit your organization!</p>
+            <a href="./join.html"><button class="joinbutton">Join Us</button></a>
         </div>
     </main>
     <footer>
