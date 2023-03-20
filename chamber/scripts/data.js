@@ -25,32 +25,12 @@ addEventListener("blur", (event) => {});
 onblur = (event) => {};
 
 // Load JSON data and do stuff
-const url = "https://github.com/LolaCuadra/wdd230/blob/main/chamber/scripts/business.json";
+const url = './business.json';
 
-// const express = require('express');
-// const app = express();
-
-// app.get('/', function(request, response) {
-//   response.sendFile(__dirname + '/business.json');
-// });
-
-// app.get('/allow-cors', function(request, response) {
-//   response.set('Access-Control-Allow-Origin', '*');
-//   response.sendFile(__dirname + '/business.json');
-// });
-
-// const listener = app.listen(process.env.PORT, function() {
-//   console.log('Your app is listening on port ' + listener.address().port);
-// });
-
-
-// COMPARE THIS TO THE VERSION FOUND IN THE W09 Activity: Working with JSON data and the Fetch API module
-// Using the innerHTML version is a little less Javascript intensive.
 const displayBusinesses = (businesses) => {
-  const cards = document.querySelector(".directory-cards"); // select the output container element
+  const cards = document.querySelector(".directory-cards");
 
   businesses.forEach((business) => {
-    // Create elements to add to the div.cards element
     let card = document.createElement("section");
     card.innerHTML = `
     <img src="${business.imageurl}" alt="${business.name}" loading="lazy">
@@ -74,11 +54,6 @@ async function getBusinessData() {
     console.log(data);
     displayBusinesses(data.businesses);
   } 
-  else {
-    console.error("There was an error loading the data.");
-    const cards = document.querySelector("directory-cards");
-    cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
-  }
 }
 
 getBusinessData();

@@ -29,14 +29,12 @@ h1{
 
 h5{
     font-size: 30px;
-    display: center;
     padding-left: 90px;
     color: black;  
 }
 
 h4{
     font-size: 30px;
-    display: center;
     color: white;
     text-shadow: black 1px 0 10px;
 }
@@ -231,7 +229,6 @@ section{
 .event img{
     width: 150px;
     height: 150px;
-    display: center;
 }
 
 #weather{
@@ -276,7 +273,7 @@ section{
 .spotlight1 img{
     width: 150px;
     height: 150px;
-    display: center;
+    /* display: center; */
 }
 
 .spotlight2{
@@ -291,7 +288,7 @@ section{
 .spotlight2 img{
     width: 150px;
     height: 150px;
-    display: center;
+    /* display: center; */
 }
 
 .spotlight3{
@@ -305,7 +302,7 @@ section{
 .spotlight3 img{
     width: 150px;
     height: 150px;
-    display: center;
+    /* display: center; */
 }
 
 .join{
@@ -425,7 +422,6 @@ background-color: #00B6DD;
 color: white;
 }
 
-/*Grid*/
 .directory-cards{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -449,7 +445,6 @@ justify-content: center;
 box-shadow: 1rem 1rem gold;
 }
 
-/*list*/
 .directory-list{    
 display: grid;
 justify-items: center;   
@@ -478,24 +473,6 @@ background-color: #0E9EBF;
 
 .directory-list section:nth-child(even) {
 background-color: #00B6DD;
-}
-
-.option{
-padding: 7px;
-}
-
-form input{
-padding: .5em;
-}
-
-.places-to-see{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.places-to-see section{
-display: grid;
-padding: .5em;
 }
 
 .active{
