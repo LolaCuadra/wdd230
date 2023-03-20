@@ -25,7 +25,7 @@ addEventListener("blur", (event) => {});
 onblur = (event) => {};
 
 // Load JSON data and do stuff
-const url = './business.json';
+const url = './scripts/business.json';
 
 const displayBusinesses = (businesses) => {
   const cards = document.querySelector(".directory-cards");
@@ -49,6 +49,7 @@ const displayBusinesses = (businesses) => {
 
 async function getBusinessData() {
   const response = await fetch(url);
+
   if (response.ok) {
     const data = await response.json();
     console.log(data);

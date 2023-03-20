@@ -48,15 +48,15 @@ const apikey = '7c769c7df2eb7fc6070718ff416f4bfd';
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
 
-function displayResults(weatherData) {
-currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`
-const desc = weatherData.weather[0].description;
-weatherIcon.setAttribute('src', iconsrc);
-weatherIcon.setAttribute('alt', desc);
-captionDesc.textContent = desc;  
-captionDesc.setAttribute('p', desc);
-}
+// function displayResults(weatherData) {
+// currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+// const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`
+// const desc = weatherData.weather[0].description;
+// weatherIcon.setAttribute('src', iconsrc);
+// weatherIcon.setAttribute('alt', desc);
+// captionDesc.textContent = desc;  
+// captionDesc.setAttribute('p', desc);
+// }
 
 async function apiFetch() {
   try {
