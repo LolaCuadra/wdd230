@@ -1,12 +1,12 @@
 {
-    "bussinesses": [
-      {
-        "membershipLevel": "gold",
-        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipPe6U44CEkuPC3FGIbfffZRtFggCy8beTkuTsGJ=s1360-w1360-h1020",
-        "name": "EMPACADORA DELI S.A.",
-        "streetAddress" :  "Carretera a Orocuina, desvio Linaca",
-        "cityStateZip": "Choluteca, Honduras",
-        "websiteURL": "http://www.seajoyhn.com/spanish/estructura/empacadora.html"
+  "business": [
+    {
+      "membershipLevel": "gold",
+      "imageurl" : "https://lh3.googleusercontent.com/p/AF1QipPe6U44CEkuPC3FGIbfffZRtFggCy8beTkuTsGJ=s1360-w1360-h1020",
+      "name": "EMPACADORA DELI S.A.",
+      "streetAddress" :  "Carretera a Orocuina, desvio Linaca",
+      "cityStateZip": "Choluteca, Honduras",
+      "websiteURL": "http://www.seajoyhn.com/spanish/estructura/empacadora.html"
       },
       {
         "imageurl" : "https://lh3.googleusercontent.com/p/AF1QipO8-TWFsJLIq4CTnxHEWs4J76PaOCMtx4BmXRjg=s1360-w1360-h1020",
@@ -64,5 +64,5 @@
         "cityStateZip": "Santa Rosa de Copán, Honduras",
         "websiteURL": " invarpi@yahoo.com"
       }
-    ]
+  ]
 }

@@ -8,10 +8,8 @@
     <title>Guamilito - Chamber Of Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/monitor.css">
-    <link rel="stylesheet" href="./">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./scripts/scripts.js" defer></script>
-    <script src="./scripts/bussiness.js" defer></script>
+    <script src="./scripts/data.js" defer></script>
 </head>
 <body>
   <div id="banner">
@@ -33,7 +31,7 @@
     <nav class="topnav">
       <a href="./index.html">Home</a>
       <a href="./discover.html">Discover</a>
-      <a href="./directory.html">Directory</a>
+      <a class="active" href="./directory.html">Directory</a>
       <a href="./join.html">Join</a>
       <a href="./contact.html">Contact</a>
     </nav>
@@ -41,6 +39,7 @@
       <p><span id="fecha"></span></p>
     </div>
   </header>
+
 <main class="directory-main">
     <div id="directory-selector">
         <button id="directory-grid" class="selected">Grid View</button>
@@ -49,6 +48,7 @@
     <div id="directory-data" class="directory-cards">
     </div>
 </main>
+
 <footer>
     <div>
     <img src="./images/Guamilito-logos_black.png" alt="Guamilito-logos_black">

@@ -26,6 +26,14 @@ h1{
     font-family: 'Caveat', cursive;
 }
 
+
+h5{
+    font-size: 30px;
+    display: center;
+    padding-left: 90px;
+    color: black;  
+}
+
 h4{
     font-size: 30px;
     display: center;
@@ -362,63 +370,137 @@ section{
 
 footer p{
     text-shadow: black 1px 0 10px;
+
+/* directory */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
-directory-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    grid-gap: 1.3em;
-  }
-  
-  .directory-cards section{
-    display: grid;
-    text-align: center;    
-    border: 2px solid #560216;    
-    width: 280px;
-    background-color: #560216;
-    padding: 1em;
-    margin: 1em;
-    color: white;
-    justify-content: center;
-  }
-  
-  .directory-cards .gold-member{
-    box-shadow: 1rem 1rem #CF920E;
-  }
-  
-  /*list*/
-  .directory-list{    
-    display: grid;
-    justify-items: center;   
-    padding: 1rem;  
-  }
-  
-  .directory-list section img{
-    display: none;
-  }
-  
-  .directory-list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    width: 70%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .directory-list a{
-    color: black;
-  }
-  
-  .directory-list section:nth-child(odd) {
-    background-color: #E89F00;
-  }
-  
-  .directory-list section:nth-child(even) {
-    background-color: #CF920E;
-  }
-  
-  
+.hall-members{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.hall-members div{
+display: grid;
+padding: .5em;
+}
+
+.directory-list:active{    
+display: grid;
+justify-items: center;   
+padding: 1rem;    
+}
+
+section{
+border: 1px solid #0E9EBF;
+justify-items: center;
+}
+
+section img{
+width: 200px;
+margin-top: 1em;
+}
+
+section a:hover{
+color: #00B6DD;
+}
+
+.directory-main{
+display: block;
+width: 100%;
+}
+
+#directory-selector{
+width: 100%;
+text-align: center;
+}
+
+#directory-selector button{
+background-color: lightgrey;
+}
+
+#directory-selector .selected{
+background-color: #00B6DD;
+color: white;
+}
+
+/*Grid*/
+.directory-cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+justify-items: center;
+grid-gap: 1.3em;
+}
+
+.directory-cards section{
+display: grid;
+text-align: center;    
+border: 2px solid #00B6DD;    
+width: 280px;
+background-color: #0E9EBF;
+padding: 1em;
+margin: 1em;
+color: white;
+justify-content: center;
+}
+
+.directory-cards .gold-member{
+box-shadow: 1rem 1rem gold;
+}
+
+/*list*/
+.directory-list{    
+display: grid;
+justify-items: center;   
+padding: 1rem;  
+}
+
+.directory-list section img{
+display: none;
+}
+
+.directory-list section {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+width: 70%;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+.directory-list a{
+color: black;
+}
+
+.directory-list section:nth-child(odd) {
+background-color: #0E9EBF;
+}
+
+.directory-list section:nth-child(even) {
+background-color: #00B6DD;
+}
+
+.option{
+padding: 7px;
+}
+
+form input{
+padding: .5em;
+}
+
+.places-to-see{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.places-to-see section{
+display: grid;
+padding: .5em;
+}
+
+.active{
+background-color: #00B6DD;
+}
 /* sizing */
 main {
 

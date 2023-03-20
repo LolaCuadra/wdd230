@@ -11,14 +11,14 @@ form{
     display: grid;
     grid-area: f;
     border: 2px black solid;
-    background-color: #0E9EBF;
+    background-color: lightblue;
     padding: 1em;
 }
 .member_info{
     display: grid;
     grid-area: m;
     border: 2px black solid;
-    background-color: #0E9EBF;
+    background-color: lightblue;
     padding: 1em;
 }
 
@@ -29,8 +29,8 @@ form{
 }
 
 .join-button{
-    background-color: #0E9EBF;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
 
 @media (min-width: 600px){

@@ -6,77 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site planning document for WDD 230 Chamber of Commerce Index- Dolores Cuadra">
     <title>Guamilito - Chamber Of Commerce</title>
-    <style>
-    h2{
-        text-align: center;
-    }
-    form {
-        /* Center the form on the page */
-        margin: 0 auto;
-        width: 400px;
-        /* Form outline */
-        padding: 1em;
-        border: 1px solid #CCC;
-        border-radius: 1em;
-    }
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    form li + li {
-        margin-top: 1em;
-    }
-    
-    label {
-        /* Uniform size & alignment */
-        display: inline-block;
-        width: 90px;
-        text-align: right;
-    }
-    
-    input,
-    textarea {
-         /* To make sure that all text fields have the same font settings
-        By default, textareas have a monospace font */
-        font: 1em sans-serif;
-        
-        /* Uniform text field size */
-        width: 300px;
-        box-sizing: border-box;
-        
-        /* Match form field borders */
-        border: 1px solid #999;
-    }
-    
-    input:focus,
-    textarea:focus {
-        /* Additional highlight for focused elements */
-        border-color: #000;
-    }
-    
-    textarea {
-        /* Align multiline text fields with their labels */
-        vertical-align: top;
-        
-        /* Provide space to type some text */
-        height: 5em;
-    }
-    #feedback {
-        background-color: #BBC7CE;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: .5em;
-        /* make this element invisible until we are ready for it */
-        display: none;
-    }
-    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/monitor.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <script src="./scripts/scripts.js" defer></script>
 </head>
 <body>
@@ -110,27 +42,27 @@
 <div class="content"> 
     <h2>Let's get in contact!</h2>
 </div>
-    <form action="" method="post">
-         <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-             </li>
-            <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email">
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <div class="button">
-                <button type="submit">Send your message</button>
-            </div>
-        </ul>
-    </form>
-    <div id="feedback"></div>   
-</body>
+<form action="" method="post">
+    <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+            <button type="submit">Send your message</button>
+        </li>
+    </ul>
+</form>
+<div id="feedback">
+</div>
     <footer>
         <div>
         <img src="./images/Guamilito-logos_black.png" alt="Guamilito-logos_black">
@@ -148,23 +80,24 @@
         <div class="pie">
             <p>&copy; <span id="currentyear"></span> Guamilito Chamber | Dolores Cuadra | WDD 230 Project | Last Modification: <span id="lastmodified"></span></p>
         </div>
-     </footer>
-        </body>
-        </html>        
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
+    </footer>
+</body>
+</html>  
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. The Chamber of Commerce will get back with you as soon as possible! <3';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>    
+    
