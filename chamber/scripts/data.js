@@ -53,7 +53,7 @@ const displayBusinesses = (businesses) => {
     // Create elements to add to the div.cards element
     let card = document.createElement("section");
     card.innerHTML = `
-    <img src="${business.imageURL}" alt="${business.name}" loading="lazy">
+    <img src="${business.imageurl}" alt="${business.name}" loading="lazy">
     <p>${business.name}</p>
     <p>${business.streetAddress}</p>
     <p>${business.cityStateZip}</p>
@@ -74,10 +74,11 @@ async function getBusinessData() {
     console.log(data);
     displayBusinesses(data.businesses);
   } 
-  // else {
-  //   console.error("There was an error loading the data.");
-  //   const cards = document.querySelector("directory-cards");
-  //   cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+  else {
+    console.error("There was an error loading the data.");
+    const cards = document.querySelector("directory-cards");
+    cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+  }
 }
 
 getBusinessData();
