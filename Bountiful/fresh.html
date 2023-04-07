@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="./styles/fresh.css">
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/fruits.js" defer></script>
+    <script src="./scripts/order.js"></script>
     <title>Bountiful Foods</title>
 </head>
 <header>
+    <div class="cabeza">
     <div class="logo">
         <img src="./images/logo-transparent-png.png" alt="logo Bountiful">
-        <h1>Bountiful Food</h1>
+    </div>
+    <div class="titulos">
+        <h1>Bountiful Foods</h1>
         <p>Always Fresh</p>
     </div>
     <div class="social-media">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#"><img  src="./images/pngwing.com (5).png" alt="instagram"></a>
+        <a href="#"><img  src="./images/pngwing.com (6).png" alt="Whastapp"></a>
+        <a href="#"><img  src="./images/pngwing.com (7).png" alt="facebook"></a>
     </div>
-    <nav>
-        <ul><li><a href="./home.html">Home</a></li></ul>
-        <ul><li><a href="./fresh.html">Fresh</a></li></ul>
-        <ul><li><a href="./about.html">About Us</a></li></ul>
-    </nav>
+    <div class="topnav">
+        <a href="./home.html">Home</a>
+        <a href="./fresh.html">Fresh</a>
+        <a href="./about.html">About Us</a>
+    </div>
+</div>
 </header>
 <main class="join-main">
     <form method="GET" action="order.html">
@@ -54,13 +59,21 @@
         </div>
 
         <div class="inputs">
-            <input type="submit" value="Order Drink" class="order-button">
+            <input type="submit" value="Order Drink" class="button-52">
         </div>
 
         <input type="hidden" id="drink-count" name="drink-count" value="">
     </form>
 </main>
 <footer>
+    <br>
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Phone: (123)456-7890 <br> Email: BountifulFoods@gmail.com</p>
+        <a href="https://goo.gl/maps/SJNVvZn7Qna5tDHN8" target="_blank">
+            <p>Store location</p>
+        </a>
+    </div>
     <br>
         <p>&copy; <span id="currentyear"></span> | Dolores Cuadra | Rexburg, ID </p>
         <p>Last Updated: <span id="lastmodified"></span> </p> 

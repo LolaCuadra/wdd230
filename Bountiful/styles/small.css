@@ -243,6 +243,28 @@ header{
   border: 5px solid lightgoldenrodyellow;
 }
 
+.order-main{
+  border: 2px solid lightgoldenrodyellow;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+}
+
+.fruit-list, .items{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-52 {
   font-size: 16px;
   font-weight: 200;
@@ -259,6 +281,16 @@ header{
 footer{
     background-color: #f7c1bb;
     text-align: center;
+}
+
+.details{
+  display: block;
+  grid-area: about;
+  background-color: #A3C282;
+  padding: 1em;
+  margin-left: 1em;
+  min-height: 150px;
+  text-align: center;
 }
 
 
