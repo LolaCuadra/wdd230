@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("https://foodtank.com/wp-content/uploads/2020/04/COVID-19-Relief_Small-Farms-.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://images.theconversation.com/files/430438/original/file-20211105-15-frqbze.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C6000%2C3000&q=45&auto=format&w=668&h=324&fit=crop");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://i.pinimg.com/736x/9d/c8/98/9dc898e5f48c365ea8f91d8b8d4d533b.jpg");
+    min-height: 400px;
+  }
+  
+  .bgimg-4{
+    background-image: url("https://i.pinimg.com/736x/9d/c8/98/9dc898e5f48c365ea8f91d8b8d4d533b.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+  
+  #map-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+  }
+  
+  #map-container a {
+      Text-decoration: none;
+      color: #1967d2;
+  }
+  
+  #map-container button {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0;
+          font: inherit;
+          font-size: inherit;
+          cursor: pointer;
+  }
+  
+  #gmp-map {
+          position: absolute;
+          left: 22em;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+  
+  #locations-panel {
+      position: absolute;
+          left: 0;
+          width: 22em;
+          top: 0;
+          bottom: 0;
+          overflow-y: auto;
+          background: white;
+          padding: 0.5em;
+          box-sizing: border-box;
+        }
+  
+  footer{
+      background-color: #f7c1bb;
+      text-align: center;
+  }
+  .map{
+      background-color: #f7c1bb;
+      text-align: center;
+  
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="Wdd230 Term 2023 Dolores Cuadra">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/fresh.css">
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/fruits.js" defer></script>
+    <title>Bountiful Foods</title>
+</head>
+<header>
+    <div class="logo">
+        <img src="./images/logo-transparent-png.png" alt="logo Bountiful">
+        <h1>Bountiful Food</h1>
+        <p>Always Fresh</p>
+    </div>
+    <div class="social-media">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+    </div>
+    <nav>
+        <ul><li><a href="./home.html">Home</a></li></ul>
+        <ul><li><a href="./fresh.html">Fresh</a></li></ul>
+        <ul><li><a href="./about.html">About Us</a></li></ul>
+    </nav>
+</header>
+<main class="join-main">
+    <form method="GET" action="order.html">
+        <div class="inputs">
+            <label for="first">Name</label> 
+            <input type="text" name="first" id="first" required>
+
+            <label for="phone">Phone</label> 
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+
+            <label for="email">Email</label> 
+            <input type="email" name="email" id="email" placeholder="yourname@gmail.com" required>
+
+            <label for="special_instr">Any Additional Instruction</label>
+            <textarea name="special_instr" id="special_instr" cols="10" rows="5"></textarea>
+
+            <input type="hidden" name="date" id="current_date" value="">
+        </div> 
+
+        <h3>Pick Your Flavors!</h3>
+        <div class="fruit-list">
+            <select id="select1"></select>
+            <select id="select2"></select>
+            <select id="select3"></select>
+        </div>
+
+        <div class="inputs">
+            <input type="submit" value="Order Drink" class="order-button">
+        </div>
+
+        <input type="hidden" id="drink-count" name="drink-count" value="">
+    </form>
+</main>
+<footer>
+    <br>
+        <p>&copy; <span id="currentyear"></span> | Dolores Cuadra | Rexburg, ID </p>
+        <p>Last Updated: <span id="lastmodified"></span> </p> 
+    <br> 
+</footer>
+</body>
+</html>

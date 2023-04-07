@@ -1,18 +1,3 @@
-// // Get the current temperature and wind speed from the page
-// const temp = parseFloat(document.getElementById("temp").textContent);
-// const wind = parseFloat(document.getElementById("wind").textContent);
-
-// // Compute the wind chill
-// const windChill = computeWindChill(temp, wind);
-
-// // Update the page with the wind chill value
-// document.getElementById("wind-chill").textContent = `${windChill} °F`;
-
-// // Function to compute wind chill
-// function computeWindChill(temp, wind) {
-//     const windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temp * Math.pow(wind, 0.16));
-//     return windChill.toFixed(1);
-// }
 function showWeather(temp, windspeed, weatherData){
   // get references to placeholders in the page
   temperatureobj = document.querySelector("#temperature");
@@ -58,19 +43,19 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 // captionDesc.setAttribute('p', desc);
 // }
 
-async function apiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      showWeather(data.main.temp.toFixed(0), data.wind.speed, data);
-    } else {
-        throw Error(await response.text());
-    }
-  } catch (error) {
-      console.log(error);
-      console.log(response);
-  }
-}
+// async function apiFetch() {
+//   try {
+//     const response = await fetch(url);
+//     if (response.ok) {
+//       const data = await response.json();
+//       showWeather(data.main.temp.toFixed(0), data.wind.speed, data);
+//     } else {
+//         throw Error(await response.text());
+//     }
+//   } catch (error) {
+//       console.log(error);
+//       console.log(response);
+//   }
+// }
 
 apiFetch();

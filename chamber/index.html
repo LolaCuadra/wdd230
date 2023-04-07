@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/monitor.css">
     <link rel="stylesheet" href="./styles/tablet.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    <script src="./scripts/spotlights.js" defer></script>
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
 </head>
@@ -71,28 +72,8 @@
             <b>News Release</b>
             <p>We are trying to help all the people on the Guamilito Community start their bussiness, please contact us if you have any inquiries or what to learn more before joining. <a href="./contact.html">Contact Us</a></p>
         </div>
-        <div class="spotlights">
-            <div class="spotlight1">
-                <h4>Trasporte de moto Taxi</h4>
-                <img src="./images/mototaxi.png" alt="mototaxi">
-                <p>"The Best Three Wheeled service in town"</p>
-                <p>mototaxis@gmail.com</p>
-                <p>+504 123 4567</p>
-            </div>
-            <div class="spotlight2">
-                <h4>Guarderia Guamilito</h4>
-                <img src="./images/guarderia.png" alt="guarderia">
-                <p> Aqui cuidamos tus nenes</p>
-                <p>Guarderiaguam@gmail.com</p>
-                <p>+504 321 8769</p>
-            </div>
-            <div class="spotlight3">
-                <h4>Tortillas a domicilio</h4>
-                <img src="./images/tortillas.png" alt="tortillas">
-                <p>Pregunte por nuestro precios por media,una y dos docenas!</p>
-                <p>+504 766 8921</p>
-            </div>
-        </div>
+        <section class="spotlights">    
+        </section>
         <div class="join">
             <p>Discover how to join the chamber of commercew and how it will benefit your organization!</p>
             <a href="./join.html"><button class="joinbutton">Join Us</button></a>
@@ -114,16 +95,16 @@
         </div>
         <div class="pie">
             <p>&copy; <span id="currentyear"></span> Guamilito Chamber | Dolores Cuadra | WDD 230 Project | Last Modification: <span id="lastmodified"></span></p>
-       </div>
+        </div>
     </footer>
-    <script>
-      const banner = document.getElementById("banner");
-      const today = new Date();
-      const dayOfWeek = today.getDay();
-      
-      if (dayOfWeek === 1 || dayOfWeek === 2) {
-          banner.style.display = "block";
-      }
-    </script>
 </body>
 </html>
+<script>
+    const banner = document.getElementById("banner");
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    
+    if (dayOfWeek === 1 || dayOfWeek === 2) {
+        banner.style.display = "block";
+    }
+  </script>

@@ -5,6 +5,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format( 
 document.querySelector("#fecha").innerHTML = fulldate; 
 
 const todayIndex = new Date();
+// (new Date()).toLocaleDateString('en-US');
 document.querySelector("#currentyear").textContent = todayIndex.getFullYear();
 
 
@@ -21,7 +22,6 @@ function myFunction() {
     }
   }
 
-// las visit
 /* day counter */
 var today_date = new Date();
 var hidden_date = document.querySelector("#current_date")
@@ -47,6 +47,3 @@ else{
     visitspan.textContent = daysSinceLastVisit;
 }
 localStorage.setItem("lastVisit", today.toLocaleDateString());
-
-
-

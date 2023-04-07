@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="Wdd230 Term 2023 Dolores Cuadra">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/weather.js"></script>
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <div class="cabeza">
+        <div class="logo">
+            <img src="./images/logo-transparent-png.png" alt="logo Bountiful">
+        </div>
+        <div class="titulos">
+            <h1>Bountiful Foods</h1>
+            <p>Always Fresh</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img  src="./images/pngwing.com (5).png" alt="instagram"></a>
+            <a href="#"><img  src="./images/pngwing.com (6).png" alt="Whastapp"></a>
+            <a href="#"><img  src="./images/pngwing.com (7).png" alt="facebook"></a>
+        </div>
+        <div class="topnav">
+            <a href="./home.html">Home</a>
+            <a href="./fresh.html">Fresh</a>
+            <a href="./about.html">About Us</a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <br>
+        <div class="hero">
+            <br>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/Apricots.webp" style="width:100%" alt="Apricots">
+            <div class="text">Close your eyes and imagine the sweet, luscious taste of a perfectly ripe peach, with its velvety skin and juicy flesh. The fragrance of fresh peaches fills the air, inviting you to take a bite and experience the explosion of flavors that dance on your taste buds. Whether sliced and served with cream or baked into a pie, peaches are a deliciously irresistible fruit that will leave you craving more.</div>
+            </div>
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/rare-fruits-tout.webp" style="width:100%" alt="Anona">
+            <div class="text">Have you ever tasted the exotic, otherworldly flavors of weird fruits? Picture sinking your teeth into a creamy, buttery durian, or indulging in the tangy sweetness of a dragon fruit. Perhaps you crave the tartness of a jackfruit, or the refreshing burst of citrus from a pomelo. With their unique textures and flavors, weird fruits are an adventure for your taste buds that will leave you craving more.</div>
+            </div>
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/p0dx4wkz.jpg" style="width:100%" alt="Apricots">
+            <div class="text">Imagine biting into a plump, juicy strawberry and savoring its sweet, succulent flavor as the juice bursts in your mouth, leaving behind a deliciously refreshing aftertaste. The bright red color and tantalizing aroma of strawberries make them a tempting treat, perfect for satisfying your sweet cravings.</div>
+            </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div id="weather-grid">
+            <div class="weather">
+                <h3> Current weather</h3>
+                <img id="weather_icon" src="" alt="">
+                <p id="temp">Temperature: <span id='t'></span>°F</p>
+                <p>Huminity: <span id='humidity'></span> %</p>
+                <h4 id='condition'></h4>
+            </div>
+            <div class="weather1">
+                <h3><span id="weather1"></span></h3>
+                <p class ="temp">Temperature: <span id='temp0'></span>°F</p>
+                <p class ="temp">Min Temperature: <span id='minTemp0'></span>°F</p>
+                <p class ="temp">Max Temperature: <span id='maxTemp0'></span>°F</p>
+            </div>
+            <div class="weather2">
+                <h3><span id="weather2"></span></h3>
+                <p class="temp">Temperature: <span id='temp2'></span>°F</p>
+                <p class="temp">Min Temperature: <span id='minTemp2'></span>°F</p>
+                <p class="temp">Max Temperature: <span id='maxTemp2'></span>°F</p>
+            </div>
+            <div class="weather3">
+                <h3><span id="weather3"></span></h3>
+                <p class="temp">Temperature: <span id='temp3'></span>°F</p>
+                <p class="temp">Min Temperature: <span id='minTemp3'></span>°F</p>
+                <p class="temp">Max Temperature: <span id='maxTemp3'></span>°F</p>
+            </div>
+            </div>
+        </div>
+        <div class="about">
+            <h2> ABOUT CARLSBAND </h2>
+            <p> Carlsbad, Ca is part of the San Diego County. It has a population of 115,302 and since is a beach the weather is warm. This place has also been known for having the best strawberries. We also have the best beach resorts in all of California. Tourists not only like our beaches, they love how clean it is.</p>
+            <img src="./images/dragon.webp" alt="">
+            <H2>WANT TO KNOW MORE ABOUT US?</H2>
+            <button class="button-52"> This is Bountiful Foods</button>
+        </div> 
+        <div class="order">
+            <h2>lets place an order!</h2>
+            <p>get a smoothie from the most fresh place in town</p>
+            <button class="button-52">Order Now!</button>
+        </div>
+        <div class="total">
+            <h2>Number of creations</h2>
+            <p>Your number of created drinks:<br><br><span id="drink-count"></span></p>
+            <button class="button-52" onclick = "window.location.href='fresh.html';">Order More!</button>
+            <input type="hidden" value="Order Drink">
+        </div>
+        <br>
+    </main>
+    <footer>
+        <br>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Phone: (123)456-7890 <br> Email: BountifulFoods@gmail.com</p>
+            <a href="https://goo.gl/maps/SJNVvZn7Qna5tDHN8" target="_blank">
+                <p>Store location</p>
+            </a>
+        </div>
+        <br>
+            <p>&copy; <span id="currentyear"></span> | Dolores Cuadra | Rexburg, ID </p>
+            <p>Last Updated: <span id="lastmodified"></span> </p> 
+        <br> 
+    </footer>
+</body>
+</html>

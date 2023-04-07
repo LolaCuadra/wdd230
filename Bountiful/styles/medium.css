@@ -1,0 +1,24 @@
+@media screen and (min-width: 850px){
+
+    main{
+        /* font-style: ;   */
+        display: grid;
+        grid-template-areas: "hero hero" 
+                            "weather about" 
+                            "weather total"
+                            "order order";
+        grid-gap: 1em;
+        
+    }
+
+    .about{
+        display: block;
+        grid-area: about;
+        border: 2px black solid;
+        background-color: lightgoldenrodyellow;
+        padding: 1em;
+        margin-left: 1em;
+        min-height: 150px;
+        text-align: center;
+    }
+}    

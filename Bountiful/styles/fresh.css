@@ -1,0 +1,27 @@
+.join-main{
+    padding: 1em;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.fruit-list, .items{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.order-button{
+    background-color: greenyellow;
+    color: black;
+    padding: .5em;
+    display: block;
+    width: 100%;
+    border-style: none black solid;
+}

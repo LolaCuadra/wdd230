@@ -15,6 +15,28 @@
         grid-template-columns: 150px auto auto auto;
     }
 
+    .spotlights{
+        grid-area: spotlights;
+        background-color: #0E9EBF;
+        border: 2px gray solid;
+        display: flex;
+        flex-direction: row;     
+        padding: 1em;
+    }
+    
+    .spotlight1{
+        border: 2px white solid;
+        background-color: #0E9EBF;
+        padding: 1em;
+        width: 50%;
+    }
+    
+    .spotlight2{
+        background-color: #0E9EBF;
+        padding: 1em;
+        width: 50%;
+    }
+    
     .spotlight3{
         display: none;
     }
@@ -40,7 +62,7 @@
         grid-area: hero;
         position: relative;      
         height: 700px; 
-        width: 800px;
+        width: 650px;
         background-image: url('../images/209ea9cb6c7737e7f0975203a97968f2.jpg'); 
         margin-left: 1em;   
     }

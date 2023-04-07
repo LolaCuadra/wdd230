@@ -23,8 +23,45 @@
         background-position: center;
         text-align: center;
         height: 400px;
-        width: 600px; 
+        width: 450px; 
         margin-left: 1em;
+    }
+
+
+    .spotlights{
+        display: flex;
+        grid-area: spotlights;
+        flex-direction: column;
+        padding: 1em;
+        border: 2px gray solid;
+        background-color: #0E9EBF;;
+    }
+    
+    .spotlight1{
+        display: block;
+        border: 2px white solid;
+        background-color:#0E9EBF;;
+        padding: 1em;
+        min-height: 150px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    .spotlight2{
+        display: block;
+        border: 2px white solid;
+        background-color: lightgray;
+        padding: 1em;
+        min-height: 150px;
+    }
+    
+    .spotlight3{
+        display: none;
+    }
+
+    .icon{
+        display: block;
     }
   } 
   

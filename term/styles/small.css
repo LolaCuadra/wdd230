@@ -1,0 +1,133 @@
+body {
+  font-family: 'Delicious Handrawn', cursive;
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+}
+
+header,
+footer,
+main {
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #A3C282;
+  padding: 1rem;
+}
+header,
+footer {
+  background-color:#f7c1bb;
+  text-align: center;
+}
+nav {
+  background-color: #f7c1bb ;
+  max-width: 832px; 
+  min-width: 600px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block: 0px;
+}
+
+nav ul li {
+  border: 1px solid #381919;
+  text-align: center;
+  width: 100%;
+  color: #381919;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;    
+  color: black;
+}
+
+nav a:hover{
+  background-color: #ffa5ab;  
+  color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.active{
+  background-color: #f7c1bb;
+}
+
+.active a{  
+  color: black;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid black;  
+  padding: 1rem;
+}
+
+#siteheader{
+  width: 80%;
+  background-color: #f7c1bb;
+  padding: 1rem;
+}
+
+#navbar{
+  width: 80%;
+  background-color: #ffa5ab;
+  padding: 1rem;
+}
+
+#navbar-active{
+  width: 80%;
+  background-color: #ffa5ab;
+  color: white;
+  padding: 1rem;
+}
+
+img{
+  border: 2px solid black;
+  width: 20%;
+  height: 20%;
+}
+
+/* hamburger menu stuff */
+#navbar{
+  display: none;
+}
+
+#menu-open{
+  display: none;
+}
+
+#menu-close{
+  display: inline;
+}
+
+#navbar.menu-active{
+  display: flex;
+}
+
+#menu-open.menu-active{
+  display: inline;
+}
+
+#menu-close.menu-active{
+  display: none;
+}
+
+/* middle widths */
+
+@media screen and (min-width: 640px) {
+    nav ul {
+      flex-direction: row;
+    }
+  }  
